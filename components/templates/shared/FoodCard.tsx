@@ -17,7 +17,7 @@ const FoodCard = ({
     return (
         <div
             className={clsx(
-                "space-y-5",
+                "space-y-5 h-fit",
                 type === "primary"
                     ? "bg-linear-0 from-primary to-primary/0 p-3 pb-6 rounded-[30px]"
                     : ""
