@@ -6,7 +6,7 @@ import CustomButton from "@/components/ui/CustomButton";
 
 const EmailSection = () => {
     return (
-        <section className="container-base">
+        <section className="container-base mb-30">
             <div className="bg-primary rounded-[40px] sm:rounded-[60px] w-full sm:h-[442px] relative overflow-hidden flex items-center justify-center max-xl:p-8">
                 <div className="flex flex-col items-center justify-center gap-7 max-w-[650px] relative z-[2]">
                     <Heading
