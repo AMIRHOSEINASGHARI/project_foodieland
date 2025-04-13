@@ -4,4 +4,9 @@ type BadgeProps = {
     bg?: boolean;
 };
 
-export type { BadgeProps };
+type CustomButtonProps = {
+    text: string;
+    icon?: string;
+};
+
+export type { BadgeProps, CustomButtonProps };

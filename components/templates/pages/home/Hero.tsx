@@ -1,5 +1,7 @@
-import Badge from "@/components/shared/Badge";
 import Image from "next/image";
+
+import Badge from "@/components/shared/Badge";
+import CustomButton from "@/components/ui/CustomButton";
 
 const Hero = () => {
     return (
@@ -48,18 +50,7 @@ const Hero = () => {
                             </span>
                         </div>
                     </div>
-                    <button className="flex items-center justify-center gap-3 py-5 px-11.5 rounded-[16px] bg-secondary">
-                        <span className="text-white tracking-[-2%] text-[12px] font-semibold">
-                            View Recipes
-                        </span>
-                        <Image
-                            src="/icons/Play.png"
-                            alt="play"
-                            width={30}
-                            height={30}
-                            className="size-[20px]"
-                        />
-                    </button>
+                    <CustomButton text="View Recipes" icon="/icons/Play.png" />
                 </div>
             </div>
             <div className="w-full h-[500px] xl:w-1/2 xl:h-full max-xl:rounded-b-[30px] overflow-hidden">
