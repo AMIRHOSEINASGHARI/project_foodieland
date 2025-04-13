@@ -43,7 +43,9 @@ const FoodCard = ({
                     className="object-cover h-[250px] w-full rounded-[20px]"
                 />
             </div>
-            <div className="space-y-5 px-3">
+            <div
+                className={clsx("space-y-5", type === "primary" ? "px-3" : "")}
+            >
                 <p
                     className={clsx(
                         "font-semibold leading-[26px] tracking-[-4%] line-clamp-2",
