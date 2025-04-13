@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 type BadgeProps = {
     icon: string;
     text: string;
@@ -12,7 +14,7 @@ type CustomButtonProps = {
 
 type AvatarProps = {
     image: string;
-    name?: string;
+    name?: string | JSX.Element;
     subText?: string;
     size?: "sm" | "md" | "lg";
 };

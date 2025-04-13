@@ -6,7 +6,7 @@ import CustomButton from "@/components/ui/CustomButton";
 
 const Banner = () => {
     return (
-        <section className="container-base my-25 xl:my-20 flex max-xl:flex-col items-center max-xl:gap-15">
+        <section className="container-base my-30 flex max-xl:flex-col items-center max-xl:gap-15">
             <div className="flex flex-col max-xl:items-center w-full xl:w-1/2 xl:mt-40 xl:pr-15">
                 <Heading
                     text="Everyone can be a

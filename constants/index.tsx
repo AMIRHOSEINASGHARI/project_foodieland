@@ -184,4 +184,19 @@ const foodsList = [
     },
 ];
 
-export { categories, foodsList };
+const instagramPosts = [
+    {
+        image: "/foods/food-9.webp",
+    },
+    {
+        image: "/foods/food-10.webp",
+    },
+    {
+        image: "/foods/food-11.webp",
+    },
+    {
+        image: "/foods/food-12.webp",
+    },
+];
+
+export { categories, foodsList, instagramPosts };
