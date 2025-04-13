@@ -3,6 +3,7 @@ import Image from "next/image";
 import Badge from "@/components/shared/Badge";
 import CustomButton from "@/components/ui/CustomButton";
 import Avatar from "@/components/ui/Avatar";
+import SubText from "@/components/shared/SubText";
 
 const Hero = () => {
     return (
@@ -23,11 +24,11 @@ const Hero = () => {
                     <h1 className="text-[40px] xl:text-[64px] font-semibold leading-[100%] tracking-[-4%]">
                         Spicy delicious chicken wings
                     </h1>
-                    <p className="font-light leading-[28px] text-sm xl:text-base text-[#00000099]">
-                        Lorem ipsum dolor sit amet, consectetuipisicing elit,
+                    <SubText
+                        subText="Lorem ipsum dolor sit amet, consectetuipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqut enim ad minim
-                    </p>
+                        magna aliqut enim ad minim"
+                    />
                     <div className="flex items-center gap-5">
                         <Badge icon="/icons/Timer.png" text="30 Minutes" bg />
                         <Badge icon="/icons/ForkKnife.png" text="Chicken" bg />

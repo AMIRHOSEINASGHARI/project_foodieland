@@ -17,4 +17,15 @@ type AvatarProps = {
     size?: "sm" | "md" | "lg";
 };
 
-export type { BadgeProps, CustomButtonProps, AvatarProps };
+type FoodCardProps = {
+    id: string;
+    image: string;
+    imageAlt: string;
+    isLike: boolean;
+    title: string;
+    timer: string;
+    category: string;
+    type: "primary" | "secondary";
+};
+
+export type { BadgeProps, CustomButtonProps, AvatarProps, FoodCardProps };
