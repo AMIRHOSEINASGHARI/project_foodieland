@@ -6,7 +6,7 @@ import Avatar from "@/components/ui/Avatar";
 
 const Hero = () => {
     return (
-        <section className="container-base relative mt-20 xl:mt-30 mb-30 rounded-[30px] overflow-hidden flex max-xl:flex-col">
+        <section className="container-base relative mt-20 xl:mt-30 rounded-[30px] overflow-hidden flex max-xl:flex-col">
             <div className="bg-primary max-xl:rounded-t-[30px] flex flex-col justify-between gap-5 xl:gap-8 p-6 xl:px-10 xl:py-12 w-full xl:w-1/2">
                 <div className="space-y-5 xl:space-y-8">
                     <div className="flex items-center justify-center gap-2 rounded-full w-[156px] h-[45px] bg-white shadow-[10px_20px_40px_#2940461A]">
@@ -56,8 +56,8 @@ const Hero = () => {
                 <Image
                     src="/Badge.png"
                     alt="Badge"
-                    width={200}
-                    height={200}
+                    width={300}
+                    height={300}
                     className="w-[150px] h-[150px] object-cover"
                 />
             </div>

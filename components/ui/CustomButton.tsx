@@ -2,10 +2,17 @@ import Image from "next/image";
 
 import { CustomButtonProps } from "@/types/components.types";
 
-const CustomButton = ({ text, icon }: CustomButtonProps) => {
+import { twMerge } from "tailwind-merge";
+
+const CustomButton = ({ text, icon, className = "" }: CustomButtonProps) => {
     return (
-        <button className="flex items-center justify-center gap-3 py-5 px-11.5 rounded-[16px] bg-secondary">
-            <span className="text-white tracking-[-2%] text-[12px] font-semibold">
+        <button
+            className={twMerge(
+                "flex items-center justify-center gap-3 py-5 px-11.5 rounded-[16px] bg-secondary text-white",
+                className
+            )}
+        >
+            <span className="tracking-[-2%] text-[12px] font-semibold whitespace-nowrap">
                 {text}
             </span>
             {icon && (

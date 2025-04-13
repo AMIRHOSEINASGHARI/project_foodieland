@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Header = () => {
     return (
-        <header className="border-b border-[#0000001A] fixed top-0 bg-white w-full">
+        <header className="border-b border-[#0000001A] fixed top-0 z-50 bg-white w-full">
             <div className="container-base flex items-center justify-between py-5 xl:py-8">
                 <div className="flex items-center gap-5">
                     <div className="flex flex-col gap-1 lg:hidden">

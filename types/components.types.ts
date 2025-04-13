@@ -7,6 +7,7 @@ type BadgeProps = {
 type CustomButtonProps = {
     text: string;
     icon?: string;
+    className?: string;
 };
 
 type AvatarProps = {
