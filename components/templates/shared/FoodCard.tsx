@@ -24,7 +24,14 @@ const FoodCard = ({
             )}
         >
             <div className="relative">
-                <div className="bg-white size-10 xl:size-12 rounded-full flex items-center justify-center absolute top-4 right-4">
+                <div
+                    className={clsx(
+                        "bg-white rounded-full flex items-center justify-center absolute",
+                        type === "primary"
+                            ? "size-10 xl:size-12 top-4 right-4"
+                            : "size-8 xl:size-10 top-3 right-3"
+                    )}
+                >
                     <Image
                         src={`/icons/Heart-fill-${
                             isLike ? "red" : "white"
@@ -32,7 +39,7 @@ const FoodCard = ({
                         alt="like"
                         width={30}
                         height={30}
-                        className="w-5"
+                        className={clsx(type === "primary" ? "w-5" : "w-4.5")}
                     />
                 </div>
                 <Image
