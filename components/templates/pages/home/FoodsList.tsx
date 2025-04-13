@@ -21,7 +21,7 @@ const FoodsList = () => {
                 />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-                {foodsList.splice(0, 8).map((food, index) => (
+                {foodsList.slice(0, 8).map((food, index) => (
                     <Fragment key={food.id}>
                         <FoodCard type="primary" {...food} />
                         {index === 4 && <Advertisement />}

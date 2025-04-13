@@ -40,7 +40,10 @@ const FoodCard = ({
                     alt={imageAlt}
                     width={500}
                     height={400}
-                    className="object-cover h-[250px] w-full rounded-[20px]"
+                    className={clsx(
+                        "object-cover w-full rounded-[20px]",
+                        type === "primary" ? "h-[250px]" : "h-[200px]"
+                    )}
                 />
             </div>
             <div
@@ -50,8 +53,8 @@ const FoodCard = ({
                     className={clsx(
                         "font-semibold leading-[26px] tracking-[-4%] line-clamp-2",
                         type === "primary"
-                            ? "text-[19px] xl:text-[21px] h-[55px]"
-                            : "xl:text-[18px] h-[52px]"
+                            ? "text-[19px] xl:text-[21px]"
+                            : "xl:text-[18px]"
                     )}
                 >
                     {title}
