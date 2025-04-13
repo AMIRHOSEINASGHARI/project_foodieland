@@ -9,4 +9,11 @@ type CustomButtonProps = {
     icon?: string;
 };
 
-export type { BadgeProps, CustomButtonProps };
+type AvatarProps = {
+    image: string;
+    name?: string;
+    subText?: string;
+    size?: "sm" | "md" | "lg";
+};
+
+export type { BadgeProps, CustomButtonProps, AvatarProps };

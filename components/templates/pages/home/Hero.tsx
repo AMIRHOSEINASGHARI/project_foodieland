@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Badge from "@/components/shared/Badge";
 import CustomButton from "@/components/ui/CustomButton";
+import Avatar from "@/components/ui/Avatar";
 
 const Hero = () => {
     return (
@@ -33,23 +34,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="max-xl:mt-10 flex max-sm:flex-col justify-between gap-5">
-                    <div className="flex items-center gap-4">
-                        <Image
-                            src="/avatars/avatar-1.webp"
-                            alt="avatar"
-                            width={50}
-                            height={50}
-                            className="rounded-full object-cover size-[50px]"
-                        />
-                        <div className="flex flex-col">
-                            <span className="font-bold tracking-[-2%]">
-                                John Smith
-                            </span>
-                            <span className="text-[15px] tracking-[-2%] text-[#00000099]">
-                                15 March 2022
-                            </span>
-                        </div>
-                    </div>
+                    <Avatar
+                        image="/avatars/avatar-1.webp"
+                        name="John Smith"
+                        subText="15 March 2022"
+                        size="lg"
+                    />
                     <CustomButton text="View Recipes" icon="/icons/Play.png" />
                 </div>
             </div>
