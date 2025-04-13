@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { grayBase64 } from "@/constants";
+
 import Heading from "@/components/shared/Heading";
 import SubText from "@/components/shared/SubText";
 import CustomButton from "@/components/ui/CustomButton";
@@ -25,6 +27,8 @@ chef in their own kitchen"
                 width={1000}
                 height={1000}
                 className="w-full sm:w-100 xl:w-[710px]"
+                placeholder="blur"
+                blurDataURL={grayBase64}
             />
         </section>
     );

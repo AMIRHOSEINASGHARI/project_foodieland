@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { grayBase64 } from "@/constants";
+
 import Badge from "@/components/shared/Badge";
 import CustomButton from "@/components/ui/CustomButton";
 import Avatar from "@/components/ui/Avatar";
@@ -51,6 +53,8 @@ const Hero = () => {
                     width={1000}
                     height={1000}
                     className="w-full h-full object-cover"
+                    placeholder="blur"
+                    blurDataURL={grayBase64}
                 />
             </div>
             <div className="absolute max-xl:hidden top-10 left-[calc(50%-75.5px)]">

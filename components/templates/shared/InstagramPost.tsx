@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { grayBase64 } from "@/constants";
+
 import Avatar from "@/components/ui/Avatar";
 
 const InstagramPost = ({ image }: { image: string }) => {
@@ -37,6 +39,8 @@ const InstagramPost = ({ image }: { image: string }) => {
                 width={500}
                 height={500}
                 className="w-full h-[290px] object-cover"
+                placeholder="blur"
+                blurDataURL={grayBase64}
             />
             <div className="p-3">
                 <div className="relative flex items-center justify-between">

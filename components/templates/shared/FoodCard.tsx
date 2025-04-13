@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { FoodCardProps } from "@/types/components.types";
 
+import { grayBase64 } from "@/constants";
+
 import Badge from "@/components/shared/Badge";
 import clsx from "clsx";
 
@@ -47,6 +49,8 @@ const FoodCard = ({
                     alt={imageAlt}
                     width={500}
                     height={400}
+                    placeholder="blur"
+                    blurDataURL={grayBase64}
                     className={clsx(
                         "object-cover w-full rounded-[20px]",
                         type === "primary" ? "h-[250px]" : "h-[200px]"

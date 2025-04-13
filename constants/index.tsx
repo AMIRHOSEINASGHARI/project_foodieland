@@ -199,4 +199,7 @@ const instagramPosts = [
     },
 ];
 
-export { categories, foodsList, instagramPosts };
+const grayBase64 =
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAFklEQVR4nGN48uTJf2Iww6jCJ3RVCAC8T27cg6csygAAAABJRU5ErkJggg==";
+
+export { categories, foodsList, instagramPosts, grayBase64 };
